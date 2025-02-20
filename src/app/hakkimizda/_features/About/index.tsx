@@ -61,14 +61,13 @@ export default function AboutFeature() {
           <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-xl">
             <motion.div
               animate={{
-                x: ["0%", "-100%"],
+                x: ["-0%", "-100%", "-200%"],
               }}
               transition={{
-                duration: 5,
+                duration: 15,
                 repeat: Infinity,
-                repeatType: "loop",
-                ease: "easeInOut",
-                times: [0, 1],
+                repeatType: "mirror",
+                ease: "linear",
               }}
               className="flex"
             >
