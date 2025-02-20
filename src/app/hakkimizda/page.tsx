@@ -1,19 +1,17 @@
 import type { Metadata } from "next";
-import AboutUsFeature from "./_features/AboutUs";
+import AboutFeature from "./_features/About";
 
 export const metadata: Metadata = {
-  title: "Hakkımızda | Isparta'nın Güvenilir Masaj ve Spa Merkezi",
+  title: "Hakkımızda | Isparta'nın Güvenilir Taksi Hizmeti",
   description:
-    "2010'dan beri Isparta'da profesyonel masaj ve spa hizmetleri sunuyoruz. Deneyimli kadromuz ve steril ortamımızla sizlere en iyi hizmeti veriyoruz.",
+    "2010'dan beri Isparta'da profesyonel taksi hizmeti sunuyoruz. Modern araç filomuz ve deneyimli sürücülerimizle 7/24 yanınızdayız.",
   openGraph: {
-    title: "Hakkımızda | Isparta'nın Güvenilir Masaj ve Spa Merkezi",
+    title: "Hakkımızda | Isparta'nın Güvenilir Taksi Hizmeti",
     description:
-      "2010'dan beri Isparta'da profesyonel masaj ve spa hizmetleri sunuyoruz. Deneyimli kadromuz ve steril ortamımızla sizlere en iyi hizmeti veriyoruz.",
+      "2010'dan beri Isparta'da profesyonel taksi hizmeti sunuyoruz. Modern araç filomuz ve deneyimli sürücülerimizle 7/24 yanınızdayız.",
   },
 };
 
-const page = () => {
-  return <AboutUsFeature />;
-};
-
-export default page;
+export default function AboutPage() {
+  return <AboutFeature />;
+}
