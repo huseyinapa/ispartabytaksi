@@ -33,36 +33,39 @@ export default function CarServices() {
         <header className="flex flex-col md:flex-row items-center justify-center mb-6 gap-4 md:gap-2">
           <h2 className="text-3xl font-bold text-center">Araçlarımız</h2>
         </header>
-        <article className="flex flex-wrap space-y-4 mx-auto justify-center items-end mt-2 grid-cols-2 gap-4 md:gap-8 md:grid-cols-3 lg:grid-cols-4 lg:space-y-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 mx-auto max-w-7xl px-4">
           {servicesData.length === 0 ? (
-            <Icon
-              icon="line-md:loading-twotone-loop"
-              className="w-40 h-40 text-blue-500"
-            />
+            <div className="col-span-full flex justify-center">
+              <Icon
+                icon="line-md:loading-twotone-loop"
+                className="w-40 h-40 text-blue-500"
+              />
+            </div>
           ) : (
             servicesData.map((service, index) => (
               <div
                 key={index}
-                className="w-80 md:w-[300px] h-[470px] md:h-[430px] flex-shrink-0 bg-white rounded-lg shadow-2xl shadow-[#282c34] p-4"
+                className="bg-white rounded-xl shadow-lg transition-transform duration-300 hover:scale-105"
               >
-                <div className="relative w-full h-[340px] md:h-60 mb-3">
+                <div className="relative aspect-[4/3] w-full">
                   <Image
                     src={service.imageUrl}
                     alt={`${service.title} - Isparta By Taksi`}
                     fill
-                    className="object-cover rounded-md"
+                    className="object-cover rounded-t-xl"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>
-                <h3 className="text-center text-2xl font-bold text-gray-800">
-                  {service.title}
-                </h3>
-                <p className="text-sm text-gray-700 text-wrap">
-                  {service.description}
-                </p>
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold text-gray-800 mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600">{service.description}</p>
+                </div>
               </div>
             ))
           )}
-        </article>
+        </div>
       </div>
     </section>
   );
