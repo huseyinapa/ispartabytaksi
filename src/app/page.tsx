@@ -10,11 +10,11 @@ export default function Home() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "SpaAndBeautyBusiness",
-            name: "Isparta Gül Şehri Spa & Masaj Salonu",
-            image: "https://ispartagulsehrimasaj.com/images/logo.jpg",
-            "@id": "https://ispartagulsehrimasaj.com",
-            url: "https://ispartagulsehrimasaj.com",
+            "@type": "TaxiService",
+            name: "Isparta By Taksi",
+            image: "https://ispartabytaksi.com/images/logo.jpg",
+            "@id": "https://ispartabytaksi.com",
+            url: "https://ispartabytaksi.com",
             telephone: "+905302411232",
             address: {
               "@type": "PostalAddress",
@@ -35,8 +35,8 @@ export default function Home() {
                 "Saturday",
                 "Sunday",
               ],
-              opens: "09:00",
-              closes: "22:00",
+              opens: "00:00",
+              closes: "23:59",
             },
           }),
         }}

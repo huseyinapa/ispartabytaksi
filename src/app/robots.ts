@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/", "/_next/", "/404"],
     },
-    sitemap: "https://ispartagulsehrimasaj.com/sitemap.xml",
+    sitemap: "https://ispartabytaksi.com/sitemap.xml",
   };
 }

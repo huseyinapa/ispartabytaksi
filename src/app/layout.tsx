@@ -20,46 +20,43 @@ const geistMono = Geist_Mono({
 // Burada metadata objenizi olduğu gibi koruyabilirsiniz
 export const metadata: Metadata = {
   title: {
-    default:
-      "Isparta Gül Şehri Spa & Masaj Salonu | Profesyonel Masaj Hizmetleri",
-    template: "%s | Isparta Gül Şehri Spa & Masaj Salonu",
+    default: "Isparta By Taksi | Güvenli ve Konforlu Ulaşım",
+    template: "%s | Isparta By Taksi",
   },
   description:
-    "Isparta'nın en profesyonel masaj ve spa merkezi. Aroma terapi, klasik masaj, sıcak taş masajı ve daha fazlası için hemen randevu alın. ✓ Profesyonel terapistler ✓ Steril ortam ✓ Uygun fiyatlar",
+    "Isparta'nın güvenilir taksi hizmeti. 7/24 hizmet, profesyonel sürücüler, modern araçlar. ✓ Hızlı Teslimat ✓ Güvenli Yolculuk ✓ Uygun Fiyatlar",
   keywords: [
-    "isparta masaj",
-    "Isparta masaj",
-    "spa merkezi",
-    "masaj salonu",
-    "aroma terapi",
-    "klasik masaj",
-    "sıcak taş masajı",
-    "profesyonel masaj",
-    "spa hizmetleri",
-    "Isparta spa",
-    "isparta spa",
+    "isparta taksi",
+    "Isparta taksi",
+    "taksi durağı",
+    "7/24 taksi",
+    "güvenli taksi",
+    "havaalanı transfer",
+    "şehir içi taksi",
+    "Isparta transfer",
+    "isparta transfer",
+    "taksi çağır",
   ],
-  authors: [{ name: "Isparta Gül Şehri Spa & Masaj Salonu" }],
-  creator: "Isparta Gül Şehri Spa & Masaj Salonu",
-  publisher: "Isparta Gül Şehri Spa & Masaj Salonu",
+  authors: [{ name: "Isparta By Taksi" }],
+  creator: "Isparta By Taksi",
+  publisher: "Isparta By Taksi",
   formatDetection: {
     email: false,
     address: true,
     telephone: true,
   },
   openGraph: {
-    title:
-      "Isparta Gül Şehri Spa & Masaj Salonu | Profesyonel Masaj Hizmetleri",
+    title: "Isparta By Taksi | Güvenli ve Konforlu Ulaşım",
     description:
-      "Isparta'nın en profesyonel masaj ve spa merkezi. Aroma terapi, klasik masaj, sıcak taş masajı ve daha fazlası için hemen randevu alın.",
-    url: "https://ispartagulsehrimasaj.com",
-    siteName: "Isparta Gül Şehri Spa & Masaj Salonu",
+      "Isparta'nın güvenilir taksi hizmeti. 7/24 hizmet, profesyonel sürücüler ve modern araçlarla hizmetinizdeyiz.",
+    url: "https://ispartabytaksi.com",
+    siteName: "Isparta By Taksi",
     images: [
       {
-        url: "https://ispartagulsehrimasaj.com/og-image.jpg",
+        url: "https://ispartabytaksi.com/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Isparta Gül Şehri Spa & Masaj Salonu",
+        alt: "Isparta By Taksi",
       },
     ],
     locale: "tr_TR",

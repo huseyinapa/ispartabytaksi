@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import WhyUsFeature from "./_features/WhyUs";
 
 export const metadata: Metadata = {
-  title: "Neden Biz? | Isparta'nın En İyi Masaj ve Spa Merkezi",
+  title: "Neden Biz? | Isparta'nın En İyi Taksi Hizmeti",
   description:
-    "Profesyonel ekibimiz, steril ortamımız ve kaliteli hizmet anlayışımızla Isparta'nın önde gelen masaj ve spa merkeziyiz. Sertifikalı terapistlerimiz ve modern tekniklerimizle fark yaratıyoruz.",
+    "Profesyonel sürücülerimiz, modern araç filomuz ve güvenilir hizmet anlayışımızla Isparta'nın önde gelen taksi firmasıyız. 7/24 hizmet ve uygun fiyatlarla yanınızdayız.",
   openGraph: {
-    title: "Neden Biz? | Isparta'nın En İyi Masaj ve Spa Merkezi",
+    title: "Neden Biz? | Isparta'nın En İyi Taksi Hizmeti",
     description:
-      "Profesyonel ekibimiz, steril ortamımız ve kaliteli hizmet anlayışımızla Isparta'nın önde gelen masaj ve spa merkeziyiz.",
+      "Profesyonel sürücülerimiz, modern araç filomuz ve güvenilir hizmet anlayışımızla Isparta'nın önde gelen taksi firmasıyız.",
   },
 };
 
