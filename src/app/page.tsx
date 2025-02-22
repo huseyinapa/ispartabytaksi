@@ -1,3 +1,4 @@
+import About from "./_features/About";
 import FAQFeatures from "./_features/FAQ";
 import HomeFeature from "./_features/Home";
 import CarServices from "./_features/Services";
@@ -15,10 +16,10 @@ export default function Home() {
             image: "https://ispartabytaksi.com/images/logo.jpg",
             "@id": "https://ispartabytaksi.com",
             url: "https://ispartabytaksi.com",
-            telephone: "+905302411232",
+            telephone: "+905431019001",
             address: {
               "@type": "PostalAddress",
-              streetAddress: "Firdevs Cd. No: 8 D:14",
+              streetAddress: "Firdevs Cd. No: 8 D:14", //! doğrulanacak
               addressLocality: "Isparta",
               postalCode: "32100",
               addressCountry: "TR",
@@ -44,6 +45,7 @@ export default function Home() {
       <div className="mx-auto">
         <HomeFeature />
         <CarServices />
+        <About />
         <FAQFeatures />
       </div>
     </>

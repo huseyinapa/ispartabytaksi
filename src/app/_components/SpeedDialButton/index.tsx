@@ -11,19 +11,14 @@ export default function SpeedDialButtonComponent() {
 
   const contacts = [
     {
-      label: "İnstagram",
-      icon: <Icon icon="mdi:instagram" width="24" height="24" />,
-      href: "https://www.instagram.com/ispartagulsehrimasaj",
-    },
-    {
-      label: "Facebook",
-      icon: <Icon icon="mdi:facebook" width="24" height="24" />,
-      href: "https://www.facebook.com/RoseTownSpaCenter",
-    },
-    {
       label: "Whatsapp",
       icon: <Icon icon="mdi:whatsapp" width="24" height="24" />,
-      href: "https://api.whatsapp.com/send/?phone=905302411232",
+      href: "https://api.whatsapp.com/send/?phone=905431019001",
+    },
+    {
+      label: "Instagram",
+      icon: <Icon icon="mdi:instagram" width="24" height="24" />,
+      href: "https://www.instagram.com/by_taksi/",
     },
   ];
 
@@ -61,7 +56,7 @@ export default function SpeedDialButtonComponent() {
           {!isOpen && (
             <span className="flex items-center text-lg text-gray-600 mr-2 transition-opacity backdrop-blur-md rounded-full px-2.5 py-1 bg-white shadow-lg">
               İletişim
-              <span className="ml-2 w-0 h-0 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent border-l-[6px] border-l-black" />
+              <span className="ml-2 w-0 h-0 border-t-[6px] border-t-transparent border-b-[6px] border-b-transparent border-l-[6px] border-l-[#333333]" />
             </span>
           )}
           <motion.button

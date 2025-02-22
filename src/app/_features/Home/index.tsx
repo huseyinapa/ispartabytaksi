@@ -1,5 +1,6 @@
 "use client";
 
+import AnimatedContent from "@/app/_ui/AnimatedContent";
 import { reportConversion } from "@/lib/reportConversion";
 import Link from "next/link";
 
@@ -14,7 +15,7 @@ const HomeFeature = () => {
           playsInline
           className="aspect-video absolute top-0 left-0 w-full h-full object-cover z-1"
         >
-          <source src="/images/0216.mp4" type="video/mp4" />
+          <source src="/images/ispartabytaksi-video.mp4" type="video/mp4" />
           Tarayıcınız video elementini desteklemiyor.
         </video>
         <div className="absolute inset-0 bg-black/30 z-2"></div>
@@ -35,16 +36,27 @@ const HomeFeature = () => {
         </div>
         {/* <div className="absolute inset-0 bg-gray-800"></div> */}
         <div className="absolute flex justify-center gap-6 bottom-20 right-0 left-0">
+          {/* <AnimatedContent
+            distance={150}
+            direction="vertical"
+            reverse={false}
+            config={{ tension: 80, friction: 20 }}
+            initialOpacity={0.2}
+            animateOpacity
+            scale={1.1}
+            threshold={0.2}
+          > */}
           <Link
             href={"tel:905431019001"}
             onClick={(e) => {
               e.preventDefault();
               reportConversion("tel:905431019001");
             }}
-            className="flex w-80 h-12 items-center justify-center border rounded-md text-black hover:text-yellow-400 font-semibold bg-yellow-400 border-yellow-400 hover:bg-transparent hover:bg-opacity-50 hover:border-opacity-50 transition-all duration-150 ease-linear backdrop-blur-lg"
+            className="flex w-80 h-12 items-center justify-center border rounded-md text-[#333333] hover:text-yellow-400 font-semibold bg-yellow-400 border-yellow-400 hover:bg-transparent hover:bg-opacity-50 hover:border-opacity-50 transition-all duration-150 ease-linear backdrop-blur-lg"
           >
             Taksi Çağır!
           </Link>
+          {/* </AnimatedContent> */}
           {/* <Link
             href=""
             target="_blank"

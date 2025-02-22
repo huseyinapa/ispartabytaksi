@@ -3,12 +3,37 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+const paragraphs = [
+  "Isparta By Taksi yılın her döneminde, haftanın her günü, 24 saat siz ve sevdiklerinize güven ve konfor içinde hizmet veriyoruz.",
+  "Toplu taşıma, taksi veya özel araçtan biraz daha fazlasını istiyorsanız, bizim tarafımızdan sunulan Yolcu Transferi hizmetlerini tercih edebilirsiniz. Taksi hizmetinden daha nitelikli ve toplu taşıma standartlarında olmayıp, size özel araçların kullanıldığı bu hizmete, farklı prosedürler dahilinde ulaşabilirsiniz. Isparta ve çevresinde dilediğiniz lokasyona ulaşmanız için en efektif çözümdür.",
+  "Transfer hizmetlerimizde, güvenlik ve konforunuz için her türlü koşulu eksiksiz sağlıyoruz. Tam zamanında ve kusursuz biçimde sunduğumuz hizmetlerimiz, en yüksek kalite standartlarında yer alır. Güvenli ve konforlu seyahat koşullarını lokasyona göre fiyatlandırıyor ve en uygun fiyatlarla seyahat edebilmenizi sağlıyoruz.",
+  "Yolcu Transferi Nasıl Yapılır? ",
+  "Yolcu Transferi hizmeti, bulunduğunuz lokasyon ile gitmek istediğiniz noktayı bizimle paylaşmanızdan sonra hemen başlayabiliyor. Müsaitlik durumuna göre dakikalar içerisinde sizi alabiliyor, Isparta  ve çevresindeki herhangi bir adrese ulaştırabiliyoruz. Bu noktada fiyatlandırma iki nokta arasındaki mesafeye göre değişiyor. Standart araçlarımızla belli sayıda yolcuyu transfer edebiliyoruz ki, özel durumlarda özel hizmetler de arz edebiliyoruz.",
+  "Bagaj durumunuz ve diğer özel gereksinimler de öğrenildikten sonra size özel bir fiyatlandırma yapılarak onayınızın ardından hemen bulunduğunuz noktaya ulaşıyoruz. Dilerseniz, tarifede belirtilen ücretler kapsamında olmak üzere sizi uzak lokasyonlardan alıp, Isparta nın herhangi bir noktasına ulaştırmamız da mümkün olabiliyor. Belirttiğimiz gibi;",
+  "Yolcu Transferi hizmetimizde odak sizsiniz, sizin tercih ve talepleriniz doğrultusunda hizmet üretiyor ve arz ediyoruz. Şimdi bize ulaşıp, hemen araç talep edebilirsiniz. Fiyatlarımız ve uygulama esasları ile ilgili detaylara sitemizden ulaşabilir ya da bize bu konuda ulaşabilirsiniz.",
+];
+
+const containerVariants = {
+  hidden: { opacity: 1 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.4,
+    },
+  },
+};
+
+const childVariants = {
+  hidden: { x: -100, opacity: 0 },
+  visible: { x: 0, opacity: 1 },
+};
+
 export default function AboutFeature() {
   return (
     <>
       <figure className="relative h-[500px] overflow-hidden">
         <Image
-          src="https://www.atasehirmasajspa.com.tr/wp-content/uploads/sites/8/2025/01/atasehirin-gozde-masaj-salonu-remiks-spa-ile-essiz-bir-deneyim-1200x500.jpg"
+          src="/images/services/ispartabytaksi-0165.jpg"
           alt="Haakkımızda"
           className="object-cover opacity-60 aspect-video w-full"
           fill
@@ -24,120 +49,22 @@ export default function AboutFeature() {
           </motion.h1>
         </figcaption>
       </figure>
-      <div className="container mx-auto py-[130px]">
-        {/* Rest of the existing content */}
-        {/* Hero Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
-          <div className="space-y-8">
-            <div>
-              <h1 className="text-5xl font-bold mb-4 text-gray-800">
-                Isparta By <span className="text-yellow-500">Taksi</span>
-              </h1>
-              <p className="text-xl text-gray-600 leading-relaxed">
-                2010 yılından bu yana Isparta&apos;da güvenilir, konforlu ve
-                profesyonel taksi hizmeti sunuyoruz. Modern araç filomuz ve
-                deneyimli sürücülerimizle 7/24 yanınızdayız.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-3 gap-6 text-center">
-              <div className="p-6 bg-yellow-50 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="text-3xl font-bold text-yellow-600 mb-2">13+</h3>
-                <p className="text-gray-700 font-medium">Yıllık Deneyim</p>
-              </div>
-              <div className="p-6 bg-yellow-50 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="text-3xl font-bold text-yellow-600 mb-2">20+</h3>
-                <p className="text-gray-700 font-medium">Araç Filosu</p>
-              </div>
-              <div className="p-6 bg-yellow-50 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="text-3xl font-bold text-yellow-600 mb-2">
-                  7/24
-                </h3>
-                <p className="text-gray-700 font-medium">Hizmet</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-xl">
-            <motion.div
-              animate={{
-                x: ["-0%", "-100%", "-200%"],
-              }}
-              transition={{
-                duration: 15,
-                repeat: Infinity,
-                repeatType: "mirror",
-                ease: "linear",
-              }}
-              className="flex"
-            >
-              {[
-                "/assets/taxi-about.jpg",
-                "/assets/taxi-about-2.jpg",
-                "/assets/taxi-about-3.jpg",
-              ].map((src, index) => (
-                <div key={index} className="relative h-[500px] min-w-[100%]">
-                  <Image
-                    src={src}
-                    alt={`Isparta By Taksi Araç Filosu ${index + 1}`}
-                    fill
-                    className="object-cover"
-                    priority={index === 0}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                </div>
-              ))}
-            </motion.div>
-          </div>
-        </div>
-
-        {/* Özellikler */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          <div className="p-6 border rounded-lg">
-            <h3 className="text-xl font-semibold mb-4">Modern Araç Filosu</h3>
-            <p className="text-gray-600">
-              Tüm araçlarımız düzenli bakımlı, klimalı ve tam sigortalıdır.
-              Konforlu yolculuk için sürekli yenilenen araç filomuzla hizmet
-              veriyoruz.
-            </p>
-          </div>
-          <div className="p-6 border rounded-lg">
-            <h3 className="text-xl font-semibold mb-4">Deneyimli Sürücüler</h3>
-            <p className="text-gray-600">
-              Profesyonel, güler yüzlü ve şehri iyi bilen sürücülerimizle
-              güvenli yolculuk garantisi sunuyoruz.
-            </p>
-          </div>
-          <div className="p-6 border rounded-lg">
-            <h3 className="text-xl font-semibold mb-4">Özel Hizmetler</h3>
-            <p className="text-gray-600">
-              Havalimanı transferi, şehirler arası yolculuk ve özel transfer
-              hizmetlerimizle tüm ulaşım ihtiyaçlarınızı karşılıyoruz.
-            </p>
-          </div>
-        </div>
-
-        {/* Misyon & Vizyon */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="p-6 bg-gray-50 rounded-lg">
-            <h2 className="text-2xl font-bold mb-4">Misyonumuz</h2>
-            <p className="text-gray-600">
-              Müşterilerimize güvenli, konforlu ve zamanında ulaşım hizmeti
-              sunarak, Isparta&apos;nın ulaşım ihtiyaçlarına modern çözümler
-              getirmek.
-            </p>
-          </div>
-          <div className="p-6 bg-gray-50 rounded-lg">
-            <h2 className="text-2xl font-bold mb-4">Vizyonumuz</h2>
-            <p className="text-gray-600">
-              Isparta&apos;nın lider taksi firması olarak, teknolojik
-              yenilikleri takip eden, müşteri memnuniyetini esas alan ve
-              sürdürülebilir hizmet kalitesiyle örnek gösterilen bir marka
-              olmak.
-            </p>
-          </div>
-        </div>
-      </div>
+      <motion.div
+        className="container flex flex-col gap-8 p-8"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        {paragraphs.map((text, index) => (
+          <motion.p
+            key={index}
+            variants={childVariants}
+            className={index === 0 ? "indent-8" : ""}
+          >
+            {text}
+          </motion.p>
+        ))}
+      </motion.div>
     </>
   );
 }

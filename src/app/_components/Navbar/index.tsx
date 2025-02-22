@@ -84,7 +84,7 @@ const NavbarComponent = () => {
         >
           Hakkımızda
         </Link>
-        <Link
+        {/* <Link
           href="/iletisim"
           className={cn(
             "hover:text-yellow-500 w-full text-nowrap text-center",
@@ -94,7 +94,7 @@ const NavbarComponent = () => {
           )}
         >
           İletişim
-        </Link>
+        </Link> */}
         <Link
           href="/neden-biz"
           className={cn(
@@ -126,7 +126,7 @@ const NavbarComponent = () => {
       className={cn(
         "flex items-center p-4 w-[100%] h-32 text-white fixed backdrop-blur-md top-0 z-10 transition-all duration-300 ease-in-out",
         {
-          "bg-gray-900/80 h-24 shadow-xl": isScrolled,
+          "bg-[#333333]/80 h-24 shadow-xl": isScrolled,
         }
       )}
     >

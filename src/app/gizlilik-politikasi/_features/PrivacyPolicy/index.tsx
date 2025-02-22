@@ -30,12 +30,12 @@ const PrivacyPolicyFeature = () => {
   return (
     <div className="min-h-screen">
       <figure className="relative h-[500px] overflow-hidden">
-        <Image
+        {/* <Image
           src="https://www.atasehirmasajspa.com.tr/wp-content/uploads/sites/8/2025/01/atasehirin-gozde-masaj-salonu-remiks-spa-ile-essiz-bir-deneyim-1200x500.jpg"
           alt="About Us"
           className="object-cover opacity-60 aspect-video w-full"
           fill
-        />
+        /> */}
         <figcaption className="absolute inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
           <motion.h1
             className="text-6xl font-bold text-center text-white"

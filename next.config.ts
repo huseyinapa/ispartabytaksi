@@ -22,12 +22,6 @@ const nextConfig: NextConfig = {
         pathname: "/wp-content/uploads/**",
         search: "",
       },
-      {
-        protocol: "https",
-        hostname: "lh3.googleusercontent.com",
-        port: "",
-        search: "",
-      },
     ],
   },
 };

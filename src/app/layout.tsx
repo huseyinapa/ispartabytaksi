@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavbarComponent from "@/app/_components/Navbar";
 import FooterComponent from "./_components/Footer";
@@ -7,20 +6,10 @@ import { ToastContainer } from "react-toastify";
 import Script from "next/script";
 import SpeedDialButtonComponent from "./_components/SpeedDialButton";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 // Burada metadata objenizi olduğu gibi koruyabilirsiniz
 export const metadata: Metadata = {
   title: {
-    default: "Isparta By Taksi | Güvenli ve Konforlu Ulaşım",
+    default: "Isparta By Taksi | Isparta Taksi Hizmetinin Güvenilir Adresi",
     template: "%s | Isparta By Taksi",
   },
   description:
@@ -28,6 +17,8 @@ export const metadata: Metadata = {
   keywords: [
     "isparta taksi",
     "Isparta taksi",
+    "isparta taksi duraklari",
+    "Isparta taksi duraklari",
     "taksi durağı",
     "7/24 taksi",
     "güvenli taksi",
@@ -53,7 +44,7 @@ export const metadata: Metadata = {
     siteName: "Isparta By Taksi",
     images: [
       {
-        url: "https://ispartabytaksi.com/og-image.jpg",
+        url: "/images/ispartabytaksi-aninda-yaninda.jpg",
         width: 1200,
         height: 630,
         alt: "Isparta By Taksi",
@@ -101,7 +92,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased ${
+        className={`antialiased ${
           NODE_ENV !== "production" ? "debug-screens" : ""
         }`}
       >
@@ -113,6 +104,7 @@ export default function RootLayout({
               height="0" width="0" style="display:none;visibility:hidden"></iframe>
             `,
           }}
+          // TODO: ADS idsi değişecek
         />
 
         {/* Google Analytics 4 (GTAG.js) */}

@@ -31,8 +31,8 @@ export default function FAQFeatures() {
       title: "Ödeme seçenekleriniz nelerdir?",
       content: (
         <>
-          Nakit ödemenin yanı sıra kredi kartı ve banka kartı ile ödeme
-          yapabilirsiniz.
+          Sadece nakit ödeme kabul ediyoruz. Türk Lirasi ve Döviz. Aynı zamanda
+          FAST ve EFT ile ödeme kabul ediyoruz.
           <br />
           Ayrıca kurumsal müşterilerimiz için faturalı çalışma imkanımız da
           bulunmaktadır.
@@ -58,7 +58,7 @@ export default function FAQFeatures() {
           Taksi ücretleri resmi taksimetre tarifesine göre hesaplanmaktadır.
           <br />
           Şehir dışı ve özel transfer hizmetlerinde ise mesafe ve güzergaha göre
-          sabit fiyat uygulanmaktadır.
+          sabit fiyat üzerinden indirim uygulanmaktadır.
         </>
       ),
     },
