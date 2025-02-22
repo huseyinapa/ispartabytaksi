@@ -1,6 +1,5 @@
 "use client";
 
-import AnimatedContent from "@/app/_ui/AnimatedContent";
 import { reportConversion } from "@/lib/reportConversion";
 import Link from "next/link";
 
@@ -32,7 +31,7 @@ const HomeFeature = () => {
             />
           </div> */}
         <div className="absolute mx-auto bottom-80 right-0 left-0 text-white text-center font-bold text-3xl md:text-4xl lg:text-5xl backdrop-blur-lg w-[90%] md:w-[67%] h-auto px-2 py-3 rounded-md">
-          Isparta'nın Her Yerine Taksi Hizmeti
+          Isparta&apos;nın Her Yerine Taksi Hizmeti
         </div>
         {/* <div className="absolute inset-0 bg-gray-800"></div> */}
         <div className="absolute flex justify-center gap-6 bottom-20 right-0 left-0">
