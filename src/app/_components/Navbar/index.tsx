@@ -197,7 +197,7 @@ const NavbarComponent = () => {
             <div className="flex flex-col items-center justify-center gap-y-2 h-full bg-gray-900 rounded-b-xl">
               {navbarLinks()}
               <Link
-                href=""
+                href="https://api.whatsapp.com/send/?phone=905431019001"
                 className="flex justify-between items-center gap-3 text-white font-semibold py-2 px-4 mt-2 rounded hover:bg-gray-700 hover:text-green-500 transition-all duration-300 ease-linear"
               >
                 <Icon
