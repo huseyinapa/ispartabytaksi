@@ -8,6 +8,7 @@ import SpeedDialButtonComponent from "./_components/SpeedDialButton";
 
 // Burada metadata objenizi olduğu gibi koruyabilirsiniz
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ispartabytaksi.com"),
   title: {
     default: "Isparta By Taksi | Isparta Taksi Hizmetinin Güvenilir Adresi",
     template: "%s | Isparta By Taksi",
@@ -33,15 +34,16 @@ export const metadata: Metadata = {
   publisher: "Isparta By Taksi",
   formatDetection: {
     email: false,
-    address: true,
+    address: false,
     telephone: true,
   },
   openGraph: {
-    title: "Isparta By Taksi | Güvenli ve Konforlu Ulaşım",
+    title: "Isparta By Taksi | Isparta Taksi Hizmeti",
     description:
       "Isparta'nın güvenilir taksi hizmeti. 7/24 hizmet, profesyonel sürücüler ve modern araçlarla hizmetinizdeyiz.",
     url: "https://ispartabytaksi.com",
     siteName: "Isparta By Taksi",
+    countryName: "Turkey",
     images: [
       {
         url: "/images/ispartabytaksi-aninda-yaninda.jpg",
@@ -75,56 +77,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="tr">
-      <head>
-        {/* Google Tag Manager: Script Kodu */}
-        <Script
-          id="gtm-base"
-          strategy="beforeInteractive" // veya "afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','AW-11516061259');
-            `,
-          }}
-        />
-      </head>
       <body
         className={`antialiased ${
           NODE_ENV !== "production" ? "debug-screens" : ""
         }`}
       >
-        {/* Google Tag Manager: NoScript Fallback */}
-        <noscript
-          dangerouslySetInnerHTML={{
-            __html: `
-              <iframe src="https://www.googletagmanager.com/ns.html?id=AW-11516061259"
-              height="0" width="0" style="display:none;visibility:hidden"></iframe>
-            `,
-          }}
-          // TODO: ADS idsi değişecek
-        />
-
-        {/* Google Analytics 4 (GTAG.js) */}
-        <Script
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-RLKC1XDH1K"
-        />
-        <Script
-          id="google-analytics"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-RLKC1XDH1K');
-            `,
-          }}
-        />
-
         <NavbarComponent />
         {children}
         <div className="fixed bottom-6 right-2">
