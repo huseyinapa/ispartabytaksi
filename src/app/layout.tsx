@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   },
   description:
     "Isparta'nın güvenilir taksi hizmeti. 7/24 hizmet, profesyonel sürücüler, modern araçlar. ✓ Hızlı Teslimat ✓ Güvenli Yolculuk ✓ Uygun Fiyatlar",
+  category: "Taxi Service",
   keywords: [
     "isparta taksi",
     "Isparta taksi",
