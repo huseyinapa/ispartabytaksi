@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const paragraphs = [
-  "Isparta By Taksi olarak, 2010 yılından bu yana şehrimizde güvenilir ve konforlu ulaşım hizmeti sunmanın gururunu yaşıyoruz. Modern araç filomuz, deneyimli sürücülerimiz ve müşteri odaklı hizmet anlayışımızla, Isparta'nın önde gelen taksi firmalarından biri olarak hizmet vermekteyiz. Bizim için öncelik her zaman yolcularımızın güvenliği ve memnuniyetidir.",
+  "Isparta By Taksi olarak, 2020 yılından bu yana şehrimizde güvenilir ve konforlu ulaşım hizmeti sunmanın gururunu yaşıyoruz. Modern araç filomuz, deneyimli sürücülerimiz ve müşteri odaklı hizmet anlayışımızla, Isparta'nın önde gelen taksi firmalarından biri olarak hizmet vermekteyiz. Bizim için öncelik her zaman yolcularımızın güvenliği ve memnuniyetidir.",
 
   "Araç filomuz düzenli bakımlarla her zaman en iyi durumda tutulmaktadır. Tüm araçlarımız klimalı, konforlu ve tam sigortalıdır. Özellikle havalimanı transferleri, şehirler arası yolculuklar ve özel transferler için geniş bagaj hacmine sahip araçlarımızla hizmet vermekteyiz. Her araçta kredi kartı ile ödeme imkanı sunarak, nakit taşıma zorunluluğunu ortadan kaldırıyoruz.",
 

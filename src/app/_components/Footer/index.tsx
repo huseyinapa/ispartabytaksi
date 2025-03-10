@@ -35,6 +35,9 @@ const FooterComponent = () => {
             İletişim
           </p>
           <div className="flex">
+            <p className="mr-1 text-gray-800">Velican Kahraman</p>
+          </div>
+          <div className="flex">
             <p className="mr-1 text-gray-800">Telefon:</p>
             <a
               href="tel:905431019001"

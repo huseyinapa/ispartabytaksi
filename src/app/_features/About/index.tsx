@@ -14,7 +14,7 @@ export default function About() {
               Isparta <span className="text-yellow-500">By Taksi</span>
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
-              2010 yılından bu yana Isparta&apos;da güvenilir, konforlu ve
+              2020 yılından bu yana Isparta&apos;da güvenilir, konforlu ve
               profesyonel taksi hizmeti sunuyoruz. Modern araç filomuz ve
               deneyimli sürücülerimizle 7/24 yanınızdayız.
             </p>
@@ -61,7 +61,7 @@ export default function About() {
                   fill
                   className="object-cover"
                   loading="lazy"
-                  // priority={index === 0}
+                // priority={index === 0}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#333333]/30 to-transparent"></div>
               </div>
