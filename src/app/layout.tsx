@@ -79,10 +79,26 @@ export default function RootLayout({
   return (
     <html lang="tr">
       <body
-        className={`antialiased ${
-          NODE_ENV !== "production" ? "debug-screens" : ""
-        }`}
+        className={`antialiased ${NODE_ENV !== "production" ? "debug-screens" : ""
+          }`}
       >
+
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-HL6VH01WXP"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-HL6VH01WXP');
+            `,
+          }}
+        />
         <NavbarComponent />
         {children}
         <div className="fixed bottom-6 right-2">

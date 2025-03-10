@@ -86,7 +86,7 @@ const FooterComponent = () => {
               <Icon icon="mdi:whatsapp" width="24" height="24" />
             </Link>
             <Link
-              href="/"
+              href="https://www.instagram.com/by_taksi/"
               className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
             >
               <svg viewBox="0 0 30 30" fill="currentColor" className="h-6">

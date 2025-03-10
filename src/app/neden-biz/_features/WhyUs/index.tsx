@@ -10,7 +10,7 @@ const paragraphs = [
 
   "Sürücülerimiz, yılların deneyimine sahip, şehri karış karış bilen, güler yüzlü ve profesyonel kişilerdir. Tüm sürücülerimiz düzenli sağlık kontrollerinden geçmekte ve sürekli eğitimlerle kendilerini geliştirmektedir. Özellikle yabancı misafirlerimiz için İngilizce bilen sürücülerimizle iletişimde hiçbir sorun yaşamayacaksınız. Müşteri memnuniyeti odaklı hizmet anlayışımızla, her yolculuğunuzda konforu ve güveni bir arada sunuyoruz.",
 
-  "Isparta By Taksi olarak, teknolojiyi yakından takip ediyor ve hizmetlerimizi sürekli olarak güncelliyoruz. Mobil uygulamamız sayesinde, taksi çağırma işlemlerinizi hızlı ve kolay bir şekilde gerçekleştirebilirsiniz. Ayrıca, yolculuk öncesinde tahmini ücret hesaplama ve sürücü bilgilerini görüntüleme gibi özelliklerle, şeffaf ve güvenilir bir hizmet sunuyoruz. Bizi tercih ettiğiniz için teşekkür eder, güvenli ve konforlu yolculuklar dileriz.",
+  "Isparta By Taksi olarak, teknolojiyi yakından takip ediyor ve hizmetlerimizi sürekli olarak güncelliyoruz. Mobil uyumlu websitemiz sayesinde, taksi çağırma işlemlerinizi hızlı ve kolay bir şekilde gerçekleştirebilirsiniz. Ayrıca, yolculuk öncesinde tahmini ücret hesaplama ve sürücü bilgilerini görüntüleme gibi özelliklerle, şeffaf ve güvenilir bir hizmet sunuyoruz. Bizi tercih ettiğiniz için teşekkür eder, güvenli ve konforlu yolculuklar dileriz.",
 ];
 
 const containerVariants = {
